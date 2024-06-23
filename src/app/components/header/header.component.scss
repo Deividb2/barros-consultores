@@ -6,6 +6,7 @@ header {
     gap: 10rem;
     min-height: 100vh;
     background: url(../../../assets/images/fundoBanner.jpg) no-repeat center / cover;
+    background-attachment: fixed;
     background-blend-mode: color;
     background-color: #0000005d;
 
@@ -28,7 +29,8 @@ header {
         .header__navigation--logo {
             text-align: center;
             color: $light-green;
-            font-size: 1.1rem;
+            font-size: .8rem;
+            text-transform: uppercase;
 
             div {
                 display: none;
