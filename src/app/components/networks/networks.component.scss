@@ -1,0 +1,20 @@
+.networks {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .networks {
+        display: grid;
+        place-content: center;
+        gap: 1.5rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 2rem;
+
+        img {
+            cursor: pointer;
+        }
+    }
+}

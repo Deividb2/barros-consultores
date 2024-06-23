@@ -1,0 +1,22 @@
+<main class="services">
+    <section></section>
+
+    <header class="services__header">
+        <h2>Nossos Serviços</h2>
+    </header>
+
+    <section class="cards-services">
+        <div class="cards" *ngFor="let service of cardsDatas" 
+        [ngStyle]="{'background-image': 'url('+service.imgSrc+')'}">
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.text }}</p>
+        </div>
+    </section>
+</main>
+
+<!--
+    Em [ngStyle]="{'background': 'url(\`service.imgSrc`\)'}"  
+    a expressão dentro da url está fazendo referência a uma propriedade js
+    
+    Outra maneira de seria assim: [ngStyle]="{'background': 'url('+ service.imgSrc +')'}"
+-->

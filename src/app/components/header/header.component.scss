@@ -1,0 +1,135 @@
+@import "../../../styles/variables";
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    min-height: 100vh;
+    background: url(../../../assets/images/fundoBanner.jpg) no-repeat center / cover;
+    background-blend-mode: color;
+    background-color: #0000005d;
+
+    .header__navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem .5rem;
+        background-color: $black;
+        color: $white;
+
+        .header__navigation--contact {
+            display: none;
+
+            .line {
+                display: none;
+            }
+        }
+
+        .header__navigation--logo {
+            text-align: center;
+            color: $light-green;
+            font-size: 1.1rem;
+
+            div {
+                display: none;
+
+                svg {
+                    width: 100px;
+                    background-color: $light-green;
+                }
+            }
+        }
+
+        .header__navigation--initialPage {
+            display: none;
+        }
+    }
+
+    .header__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+        font-family: $font-raleway;
+
+        h2 {
+            color: $white;
+            font-family: $font-playFair;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        hr {
+            display: none;
+        }
+    }
+
+    .header__form-contact {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+
+        .header__navigation {
+            justify-content: space-around;
+            padding: 1.5rem 0;
+            background-color: transparent;
+
+            .header__navigation--contact {
+                display: grid;
+
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    color: $white;
+                    font-size: 1rem;
+                    text-decoration: none;
+                    margin-bottom: .6rem;
+                }
+
+                .line {
+                    display: block;
+                    background-color: $light-green;
+                    width: 50%;
+                    height: 5px;
+                    border: none;
+                }
+            }
+
+            // .header__navigation--logo {}
+
+            .header__navigation--initialPage {
+                display: block;
+
+                a {
+                    color: $light-green;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .header__title {
+            gap: 1.5rem;
+
+            h2 {
+                font-size: 5rem;
+                max-width: 40rem;
+            }
+
+            hr {
+                display: flex;
+                width: 6rem;
+                height: 10px;
+                border: none;
+                background-color: $light-green;
+            }
+        }
+
+        .header__form-contact {
+            display: block;
+        }
+    }
+}

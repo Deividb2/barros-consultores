@@ -1,0 +1,15 @@
+<section class="feedbacks">
+    <header class="feedbacks__header">
+        <h2>Opinião de Nossos Clientes</h2>
+    </header>
+
+    <main class="feedbacks__clientes">
+        <div *ngFor="let cliente of feedbacks" class="feedbacks__clientes--card">
+            <div>
+                <h3>{{ cliente.name }}</h3>
+                <h4>{{ cliente.function }}</h4>
+            </div>
+            <p>{{ cliente.opinion }}</p>
+        </div>
+    </main>
+</section>

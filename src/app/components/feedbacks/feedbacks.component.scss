@@ -1,0 +1,50 @@
+@import "../../../styles/variables";
+
+.feedbacks {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    padding: 1.5rem .5rem;
+    background-color: $black;
+    color: $white;
+
+    .feedbacks__header {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .feedbacks__clientes {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+
+        .feedbacks__clientes--card {
+            display: grid;
+            gap: 1rem;
+            width: 90vw;
+            height: 30vh;
+            max-width: 20rem;
+
+            div {
+                color: $light-green;
+                height: 10vh;
+
+                h3 {
+                    font-size: 1.5rem;
+                }
+
+                h4 {
+                    font-size: 1.1rem;
+                }
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.4rem;
+            }
+        }
+    }
+}
