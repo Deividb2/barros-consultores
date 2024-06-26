@@ -7,6 +7,7 @@ import { NetworksComponent } from './networks/networks.component';
 import { OurServicesComponent } from './our-services/our-services.component';
 import { FeedbacksComponent } from './feedbacks/feedbacks.component';
 import { FooterComponent } from './footer/footer.component';
+import { CitationAndFormComponent } from './citation-and-form/citation-and-form.component';
 
 
 
@@ -17,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
     NetworksComponent,
     OurServicesComponent,
     FeedbacksComponent,
+    CitationAndFormComponent,
     FooterComponent,
   ],
   imports: [
@@ -24,11 +26,12 @@ import { FooterComponent } from './footer/footer.component';
   ],
   exports: [
     HeaderComponent,
-    FeedbacksComponent,
-    FooterComponent,
     FormContactComponent,
+    NetworksComponent,
     OurServicesComponent,
-    NetworksComponent
+    FeedbacksComponent,
+    CitationAndFormComponent,
+    FooterComponent
   ]
 })
 export class ComponentsModule { }
